@@ -2,17 +2,16 @@
 
 using namespace System;
 using namespace System::Windows::Forms;
-using namespace Lab8;
+using namespace Lab_8; 
 
 [STAThread]
-int main(array<String^>^ args) // Залишаємо цей підпис для Windows Forms
+int main(array<String^>^ args)
 {
     Application::EnableVisualStyles();
     Application::SetCompatibleTextRenderingDefault(false);
 
     // Створення і запуск форми
-    Application::Run(gcnew MyForm());
+    Application::Run(gcnew Lab_8::MyForm()); 
 
     return 0;
 }
-
